@@ -32,6 +32,7 @@ img:hover {
   border: 1px solid #22aa44;
   box-shadow:  -1px 1px #22aa44, -2px 2px #22aa44, -3px 3px #22aa44, -4px 4px #22aa44, -5px 5px #22aa44;
   background-color: #44cc66;
+
 }
 
 .indifferent {
@@ -46,6 +47,36 @@ img:hover {
   background-color: #dd4444;
 }
 
-/* create a column class! make sure all of the divs within 'container's have a class of 'column' */
+.column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "a f f"
+    "b f f"
+    "c d e";
+  align-items: start;
+}
 
-/* create your tile classes! we recommend .small .med .large */
+.small1 {
+  grid-area: a;
+}
+
+.small2 {
+  grid-area: b;
+}
+
+.small3 {
+  grid-area: c;
+}
+
+.medium1 {
+  grid-area: d;
+}
+
+.medium2 {
+  grid-area: e;
+}
+
+.large {
+  grid-area: f;
+}
