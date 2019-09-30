@@ -50,6 +50,7 @@ img:hover {
 .column {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 33%;
   grid-template-areas:
     "a f f"
     "b f f"
@@ -79,4 +80,5 @@ img:hover {
 
 .large {
   grid-area: f;
+  heigth: 100%;
 }
